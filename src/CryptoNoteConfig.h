@@ -43,7 +43,7 @@ namespace parameters {
   const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE     = 10000; //size of block (bytes) after which reward for block calculated using block size
   const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V1  = 10000;
   const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
-  const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 6;
+  const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 8;
   // COIN - number of smallest units in one coin
   const uint64_t POINT                                         = UINT64_C(1000);        // pow(10, 3)
   const uint64_t COIN                                          = UINT64_C(1000000);     // pow(10, 6)
@@ -109,8 +109,8 @@ namespace parameters {
   const uint64_t REWARD_INCREASE_INTERVAL                      = (UINT64_C(2640));
 
 
-const char     CRYPTONOTE_NAME[]                             = "Mushi";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001904e029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121013f10b20e46406abdcedb02efdce78bc954cff022b67ebab10a8b7eec1954e74e";
+const char     CRYPTONOTE_NAME[]                             = "fyre";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001904e029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210196c6496fcd8d96d55f89f92c7221b5d4853bcf32e9da542c691ff7f242eda30f";
 const uint32_t GENESIS_NONCE                                 = 70;
 const uint64_t GENESIS_TIMESTAMP                             = 1515479625;
 
@@ -144,8 +144,8 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          //
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1510d13336228debfee9c918ce505efe225d8c94d045fa115";
 
 const std::initializer_list<const char*> SEED_NODES = {
-   "194.135.91.245:17236",
-   "80.208.228.138:17236"
+   "34.216.244.218:17236",
+   "34.217.23.184:17236"
 };
 
 struct CheckpointData {
